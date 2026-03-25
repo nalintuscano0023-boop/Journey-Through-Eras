@@ -1,0 +1,461 @@
+[
+    {
+        "id": 0,
+        "name": "Ice Age",
+        "subtitle": "2.6 Million – 11,700 Years Ago",
+        "bgImage": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&w=1920",
+        "galleryImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=900",
+        "discoveryImage": "https://images.unsplash.com/photo-1516911553974-990fffab0b0b?q=80&w=900",
+        "eraIcon": "❄️",
+        "particleEffect": "snow",
+        "themeColor": "#00b4d8",
+        "themeGlow": "rgba(0,180,216,0.35)",
+        "gradient": "linear-gradient(135deg, #023e8a 0%, #00b4d8 50%, #90e0ef 100%)",
+        "description": "A frozen world of breathtaking desolation. Colossal glaciers blanketed the northern continents, while sea levels plummeted. In this harsh theatre, our ancestors hunted mammoths and created the first symbolic art in deep caves. Fire was not merely warmth; it was civilisation's first heartbeat, allowing humanity to survive and dream amidst the ice.",
+        "keyFacts": [
+            {
+                "label": "Global Temp",
+                "value": "−10°C",
+                "icon": "🌡️"
+            },
+            {
+                "label": "Population",
+                "value": "~1 Million",
+                "icon": "👥"
+            },
+            {
+                "label": "Ice Cover",
+                "value": "30% of Earth",
+                "icon": "🧊"
+            },
+            {
+                "label": "Sea Level",
+                "value": "120m Lower",
+                "icon": "🌊"
+            }
+        ],
+        "milestones": [
+            {
+                "year": "2.6 Mya",
+                "title": "Pleistocene Begins",
+                "desc": "Earth enters the Ice Age cycle of glacial advances and retreats.",
+                "icon": "🧊"
+            },
+            {
+                "year": "300 Kya",
+                "title": "Fire Mastered",
+                "desc": "Early humans gain control over fire, reshaping diet and social bonding.",
+                "icon": "🔥"
+            },
+            {
+                "year": "100 Kya",
+                "title": "Cave Art Emerges",
+                "desc": "Abstract ochre drawings mark the first known symbolic human thought.",
+                "icon": "🎨"
+            },
+            {
+                "year": "40 Kya",
+                "title": "Tool Complexity",
+                "desc": "Bone needles, fishhooks, and blade tools mark a cognitive revolution.",
+                "icon": "🪨"
+            },
+            {
+                "year": "11.7 Kya",
+                "title": "The Thaw",
+                "desc": "Glaciers retreat, sea levels rise, and the Holocene epoch begins.",
+                "icon": "☀️"
+            }
+        ],
+        "decision": {
+            "show": false
+        },
+        "stats": {
+            "temp": 10,
+            "pop": 1,
+            "tech": 5
+        },
+        "statsDisplay": {
+            "temp": "-10°C (Global)",
+            "pop": "~1 Million",
+            "tech": "Stone Tools"
+        }
+    },
+    {
+        "id": 1,
+        "name": "Ancient Era",
+        "subtitle": "10,000 BCE – 500 CE",
+        "bgImage": "https://images.unsplash.com/photo-1548115184-bc6544d06a58?q=80&w=1920",
+        "galleryImage": "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?q=80&w=900",
+        "discoveryImage": "https://images.unsplash.com/photo-1608139364966-9b5cc10aa32b?q=80&w=900",
+        "eraIcon": "🏛️",
+        "particleEffect": "fireflies",
+        "themeColor": "#f4a261",
+        "themeGlow": "rgba(244,162,97,0.35)",
+        "gradient": "linear-gradient(135deg, #6b3a1f 0%, #f4a261 50%, #ffd6a5 100%)",
+        "description": "From the fertile river valleys, humanity transformed from wandering hunters to settled citizens. The first seeds planted grew into law, art, and empire. From Sumerian script to Roman engineering, ancient civilisations built the foundations of the modern world. It was a vast, interconnected age of philosophy, trade, and monumental ambition.",
+        "keyFacts": [
+            {
+                "label": "Global Temp",
+                "value": "14°C",
+                "icon": "🌡️"
+            },
+            {
+                "label": "Population",
+                "value": "~300 Million",
+                "icon": "👥"
+            },
+            {
+                "label": "Writing",
+                "value": "Cuneiform, 3200 BCE",
+                "icon": "📜"
+            },
+            {
+                "label": "Largest City",
+                "value": "Rome ~1M",
+                "icon": "🏙️"
+            }
+        ],
+        "milestones": [
+            {
+                "year": "10,000 BCE",
+                "title": "Agricultural Revolution",
+                "desc": "Humans settle in villages and begin farming in the Fertile Crescent.",
+                "icon": "🌾"
+            },
+            {
+                "year": "3200 BCE",
+                "title": "Invention of Writing",
+                "desc": "Sumerian cuneiform script enables record-keeping and literature.",
+                "icon": "📜"
+            },
+            {
+                "year": "2560 BCE",
+                "title": "Great Pyramid Built",
+                "desc": "Egyptians erect the Great Pyramid of Giza — still the most massive stone structure on Earth.",
+                "icon": "🔺"
+            },
+            {
+                "year": "500 BCE",
+                "title": "Classical Philosophy",
+                "desc": "Socrates, Confucius, and Buddha reshape moral and intellectual thought.",
+                "icon": "🤔"
+            },
+            {
+                "year": "44 BCE",
+                "title": "Fall of the Republic",
+                "desc": "Julius Caesar is assassinated; Rome transforms into a global empire.",
+                "icon": "⚔️"
+            }
+        ],
+        "decision": {
+            "show": false
+        },
+        "stats": {
+            "temp": 40,
+            "pop": 15,
+            "tech": 20
+        },
+        "statsDisplay": {
+            "temp": "14°C (Global)",
+            "pop": "~300 Million",
+            "tech": "Agriculture / Bronze"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Industrial Era",
+        "subtitle": "1760 – 1900 CE",
+        "bgImage": "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?q=80&w=1920",
+        "galleryImage": "https://images.unsplash.com/photo-1516035054744-d474c5209db5?q=80&w=900",
+        "discoveryImage": "https://images.unsplash.com/photo-1534398079543-7ae6d016b86a?q=80&w=900",
+        "eraIcon": "⚙️",
+        "particleEffect": "smog",
+        "themeColor": "#e76f51",
+        "themeGlow": "rgba(231,111,81,0.35)",
+        "gradient": "linear-gradient(135deg, #3d1a10 0%, #e76f51 50%, #f4a261 100%)",
+        "description": "The roar of steam and the screech of iron rails marked the birth of the Industrial Age. Machines multiplied human output, pulling millions into growing cities. While Edison lit the night and Darwin reshaped science, the soot choked skies became nature's first invoice for progress; a debt we are still paying today.",
+        "keyFacts": [
+            {
+                "label": "Global Temp",
+                "value": "14.5°C",
+                "icon": "🌡️"
+            },
+            {
+                "label": "Population",
+                "value": "~1.5 Billion",
+                "icon": "👥"
+            },
+            {
+                "label": "CO₂ Level",
+                "value": "285 ppm",
+                "icon": "💨"
+            },
+            {
+                "label": "Railways",
+                "value": "1M km by 1900",
+                "icon": "🚂"
+            }
+        ],
+        "milestones": [
+            {
+                "year": "1769",
+                "title": "Steam Engine",
+                "desc": "James Watt perfects the steam engine, launching the industrial age.",
+                "icon": "♨️"
+            },
+            {
+                "year": "1830",
+                "title": "First Railway",
+                "desc": "Liverpool to Manchester railway opens — the world's first passenger rail line.",
+                "icon": "🚂"
+            },
+            {
+                "year": "1859",
+                "title": "Origin of Species",
+                "desc": "Darwin publishes evolution by natural selection, reshaping science and faith.",
+                "icon": "📖"
+            },
+            {
+                "year": "1879",
+                "title": "Electric Light",
+                "desc": "Edison demonstrates the first practical incandescent light bulb.",
+                "icon": "💡"
+            },
+            {
+                "year": "1903",
+                "title": "First Flight",
+                "desc": "The Wright Brothers achieve 12 seconds of powered flight at Kitty Hawk.",
+                "icon": "✈️"
+            }
+        ],
+        "decision": {
+            "show": true,
+            "title": "⚙️ Industrial Crossroads",
+            "text": "Your factory empire is booming. How do you power the next decade of growth?",
+            "choices": [
+                {
+                    "text": "🏭 Double Down on Coal",
+                    "impact": "Maximises output now but poisons rivers and skies. Future pollution +35.",
+                    "pol": 35,
+                    "tech": 15
+                },
+                {
+                    "text": "🌊 Invest in Waterways",
+                    "impact": "Slower growth, cleaner rivers. Future pollution −15.",
+                    "pol": -15,
+                    "tech": 5
+                }
+            ]
+        },
+        "stats": {
+            "temp": 45,
+            "pop": 40,
+            "tech": 50
+        },
+        "statsDisplay": {
+            "temp": "14.5°C (Global)",
+            "pop": "~1.5 Billion",
+            "tech": "Steam / Machinery"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Modern Era",
+        "subtitle": "1900 – Present",
+        "bgImage": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?q=80&w=1920",
+        "galleryImage": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=900",
+        "discoveryImage": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=900",
+        "eraIcon": "🌐",
+        "particleEffect": "data",
+        "themeColor": "#4361ee",
+        "themeGlow": "rgba(67,97,238,0.35)",
+        "gradient": "linear-gradient(135deg, #0d1b2a 0%, #4361ee 50%, #7209b7 100%)",
+        "description": "From the Moon landing to the internet, the Modern Era is a compressed revolution of breathtaking change. We decoded DNA and placed supercomputers in every pocket, yet our progress has pushed the planet to a fever pitch. Humanity is now simultaneously more powerful and more vulnerable than ever before.",
+        "keyFacts": [
+            {
+                "label": "Global Temp",
+                "value": "15.5°C",
+                "icon": "🌡️"
+            },
+            {
+                "label": "Population",
+                "value": "8+ Billion",
+                "icon": "👥"
+            },
+            {
+                "label": "CO₂ Level",
+                "value": "420 ppm",
+                "icon": "💨"
+            },
+            {
+                "label": "Internet Users",
+                "value": "5.4 Billion",
+                "icon": "🌐"
+            }
+        ],
+        "milestones": [
+            {
+                "year": "1945",
+                "title": "Nuclear Age",
+                "desc": "The first atomic bomb detonates — humanity holds a power once only nature possessed.",
+                "icon": "☢️"
+            },
+            {
+                "year": "1969",
+                "title": "Moon Landing",
+                "desc": "Apollo 11 lands on the Moon. 600 million watch live.",
+                "icon": "🌕"
+            },
+            {
+                "year": "1991",
+                "title": "World Wide Web",
+                "desc": "Tim Berners-Lee publishes the first website, beginning the information age.",
+                "icon": "🕸️"
+            },
+            {
+                "year": "2007",
+                "title": "Smartphone Era",
+                "desc": "The iPhone launches — a supercomputer in every pocket.",
+                "icon": "📱"
+            },
+            {
+                "year": "2023",
+                "title": "AI Inflexion",
+                "desc": "Generative AI reaches 100 million users in 60 days, reshaping knowledge work.",
+                "icon": "🤖"
+            }
+        ],
+        "decision": {
+            "show": true,
+            "title": "🌐 Modern Policy Choice",
+            "text": "A landmark international summit gives your nation a binding vote. What is your priority?",
+            "choices": [
+                {
+                    "text": "🤖 Accelerate AI & Space",
+                    "impact": "Massive tech leap but energy hunger spikes. Future tech +40, pollution +10.",
+                    "pol": 10,
+                    "tech": 40
+                },
+                {
+                    "text": "🌿 Green New Deal",
+                    "impact": "Slower tech growth but a healing planet. Future tech −10, pollution −40.",
+                    "pol": -40,
+                    "tech": -10
+                }
+            ]
+        },
+        "stats": {
+            "temp": 65,
+            "pop": 85,
+            "tech": 80
+        },
+        "statsDisplay": {
+            "temp": "15.5°C (Global)",
+            "pop": "8+ Billion",
+            "tech": "Digital / Nuclear"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Future Era",
+        "subtitle": "2050 – 2150 CE",
+        "bgImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1920",
+        "galleryImage": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=900",
+        "discoveryImage": "https://images.unsplash.com/photo-1478479405421-ce83c92fb3ba?q=80&w=900",
+        "eraIcon": "🚀",
+        "particleEffect": "energy",
+        "themeColor": "#56cfe1",
+        "themeGlow": "rgba(86,207,225,0.35)",
+        "gradient": "linear-gradient(135deg, #05103a 0%, #56cfe1 50%, #80ffdb 100%)",
+        "description": "The future is not a destination, but a choice. It may be a world of clean fusion and eco cities, or one of rising seas and resource scarcity. The story of tomorrow is not yet written; it begins with the decisions we make in our boardrooms and living rooms today.",
+        "keyFacts": [
+            {
+                "label": "Scenario A Temp",
+                "value": "+1.5°C",
+                "icon": "🌡️"
+            },
+            {
+                "label": "Scenario B Temp",
+                "value": "+4°C",
+                "icon": "🔥"
+            },
+            {
+                "label": "Population Est.",
+                "value": "9–11 Billion",
+                "icon": "👥"
+            },
+            {
+                "label": "Key Tech",
+                "value": "AI / Fusion",
+                "icon": "⚡"
+            }
+        ],
+        "milestones": [
+            {
+                "year": "2035",
+                "title": "EV Tipping Point",
+                "desc": "Electric vehicles surpass combustion cars globally for the first time.",
+                "icon": "🔋"
+            },
+            {
+                "year": "2050",
+                "title": "Net Zero Target",
+                "desc": "Nations' pledged deadline to reach net-zero carbon emissions.",
+                "icon": "🌿"
+            },
+            {
+                "year": "2070",
+                "title": "Fusion Energy",
+                "desc": "Commercial fusion reactors come online, delivering unlimited clean energy.",
+                "icon": "⚡"
+            },
+            {
+                "year": "2100",
+                "title": "Climate Reckoning",
+                "desc": "Earth's temperature trajectory locks in — 1.5°C or 4°C scenarios diverge.",
+                "icon": "🌍"
+            },
+            {
+                "year": "2150",
+                "title": "Interplanetary Civilisation",
+                "desc": "Permanent human settlements established on Mars and the Moon.",
+                "icon": "🚀"
+            }
+        ],
+        "futureScenarios": {
+            "utopia": {
+                "title": "🌿 Ecological Utopia",
+                "desc": "Fusion energy powers a zero-waste civilisation. Rewilded forests cover half the land. Global temps stabilise at +1.2°C. Humanity flourishes in harmony with nature, reaching the stars.",
+                "color": "#38b000"
+            },
+            "techUtopia": {
+                "title": "🤖 Technological Nirvana",
+                "desc": "AGI solves climate, disease, and poverty simultaneously. Nanobot swarms purify oceans. Humans live to 150. The pace of change is breathtaking but inequality remains.",
+                "color": "#4361ee"
+            },
+            "balanced": {
+                "title": "⚖️ Cautious Progress",
+                "desc": "Nations cooperate imperfectly. Temps rise +2.1°C before stabilising. Coastal cities adapt with sea walls. Technology lifts billions out of poverty, though nature remains threatened.",
+                "color": "#f4a261"
+            },
+            "dystopia": {
+                "title": "☠️ Climate Collapse",
+                "desc": "Carbon emissions spiralled past 550 ppm. +4°C scorched fertile zones. Wars over water and food destabilise nations. Two billion people become climate refugees by 2100.",
+                "color": "#e63946"
+            }
+        },
+        "decision": {
+            "show": false
+        },
+        "stats": {
+            "temp": 80,
+            "pop": 95,
+            "tech": 100
+        },
+        "statsDisplay": {
+            "temp": "+1.5°C – +4°C",
+            "pop": "9–11 Billion",
+            "tech": "AI / Fusion"
+        }
+    }
+]

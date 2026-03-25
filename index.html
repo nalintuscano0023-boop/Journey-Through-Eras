@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Journey through Earth's five defining eras — an immersive, interactive storytelling experience spanning the Ice Age to a speculative future.">
+    <title>Journey Through Eras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="bg-overlay"></div>
+    <img id="bg-image" src="" alt="" aria-hidden="true">
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+    <div id="time-travel-overlay" class="hidden" aria-hidden="true" role="presentation">
+        <canvas id="time-vortex-canvas"></canvas>
+        <div id="time-travel-content">
+            <div class="warp-logo">⏳</div>
+            <h2 id="time-travel-text">Initiating time displacement…</h2>
+            <div class="warp-bar">
+                <div class="warp-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <main id="app">
+        <section id="hero" aria-label="Welcome screen">
+            <div class="hero-bg-grid" aria-hidden="true"></div>
+            <div class="hero-content">
+
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Interactive Experience
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="title-line-1">Journey Through</span>
+                    <span class="title-line-2 gradient-text">Eras</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Journey through 2.6 million years of Earth's story from frozen tundra to a possible tomorrow.
+                </p>
+
+                <div class="hero-globe-wrap" aria-hidden="true">
+                    <canvas id="globe-canvas"></canvas>
+                    <div class="globe-ring globe-ring-1"></div>
+                    <div class="globe-ring globe-ring-2"></div>
+                    <div class="globe-ring globe-ring-3"></div>
+                </div>
+
+                <div class="hero-ctas">
+                    <button id="start-btn" class="cta-button ripple"
+                        aria-label="Start the Earth Era Explorer experience">
+                        <span class="btn-icon">🚀</span>
+                        <span>Start Exploring</span>
+                        <div class="btn-shine"></div>
+                    </button>
+                    <button id="hero-theme-btn" class="glass-button" aria-label="Toggle dark or light theme"
+                        title="Toggle Theme">
+                        <span id="hero-theme-icon">🌙</span>
+                    </button>
+                </div>
+
+                <div class="hero-era-chips" aria-label="Available eras">
+                    <span class="era-chip">❄️ Ice Age</span>
+                    <span class="era-chip">🏛️ Ancient</span>
+                    <span class="era-chip">⚙️ Industrial</span>
+                    <span class="era-chip">🌐 Modern</span>
+                    <span class="era-chip">🚀 Future</span>
+                </div>
+            </div>
+
+            <div class="scroll-hint" aria-hidden="true">
+                <div class="scroll-dot"></div>
+            </div>
+        </section>
+
+        <div id="explorer-container" class="hidden" role="main">
+
+            <header class="explorer-header" role="banner">
+                <button id="back-btn" class="glass-button icon-btn" aria-label="Return to home screen"
+                    title="Back to Home">
+                    ←
+                </button>
+                <div class="explorer-title-wrap">
+                    <span class="explorer-logo">⏳</span>
+                    <span class="explorer-title-text">Earth Era Explorer</span>
+                </div>
+                <div class="header-controls">
+                    <button id="voice-toggle-btn" class="glass-button icon-btn" aria-label="Toggle voice narration"
+                        title="Voice Narration" aria-pressed="false">
+                        <span id="voice-icon">🔈</span>
+                        <span class="voice-status-dot" id="voice-dot"></span>
+                    </button>
+                    <button id="theme-toggle-btn" class="glass-button icon-btn" aria-label="Toggle dark or light theme"
+                        title="Toggle Theme">
+                        <span id="theme-icon">🌙</span>
+                    </button>
+                </div>
+            </header>
+
+            <nav id="timeline" aria-label="Era timeline navigation">
+                <div class="timeline-track" aria-hidden="true">
+                    <div id="timeline-progress-bar" class="timeline-progress" role="progressbar" aria-valuenow="0"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <ul class="stepper" role="list">
+                    <li class="step active" data-era="0" role="listitem" tabindex="0" aria-label="Ice Age era"
+                        aria-current="true">
+                        <span class="step-icon">❄️</span>
+                        <div class="dot" aria-hidden="true"></div>
+                        <span class="step-label">Ice Age</span>
+                    </li>
+                    <li class="step" data-era="1" role="listitem" tabindex="0" aria-label="Ancient Era">
+                        <span class="step-icon">🏛️</span>
+                        <div class="dot" aria-hidden="true"></div>
+                        <span class="step-label">Ancient</span>
+                    </li>
+                    <li class="step" data-era="2" role="listitem" tabindex="0" aria-label="Industrial Era">
+                        <span class="step-icon">⚙️</span>
+                        <div class="dot" aria-hidden="true"></div>
+                        <span class="step-label">Industrial</span>
+                    </li>
+                    <li class="step" data-era="3" role="listitem" tabindex="0" aria-label="Modern Era">
+                        <span class="step-icon">🌐</span>
+                        <div class="dot" aria-hidden="true"></div>
+                        <span class="step-label">Modern</span>
+                    </li>
+                    <li class="step" data-era="4" role="listitem" tabindex="0" aria-label="Future Era">
+                        <span class="step-icon">🚀</span>
+                        <div class="dot" aria-hidden="true"></div>
+                        <span class="step-label">Future</span>
+                    </li>
+                </ul>
+            </nav>
+
+            <section id="era-content" class="glass-panel" aria-live="polite" aria-atomic="false">
+
+                <div class="era-hero-strip">
+                    <div class="era-media-wrap">
+                        <img id="era-gallery-img" src="" alt="" class="era-main-img">
+                        <div class="era-img-overlay" aria-hidden="true"></div>
+                        <div class="era-year-badge" id="era-subtitle"></div>
+                    </div>
+                    <div class="era-text-wrap">
+                        <div class="era-title-row">
+                            <div class="era-icon-big" id="era-icon" aria-hidden="true"></div>
+                            <h2 id="era-title" class="gradient-text era-main-title">Era Title</h2>
+                        </div>
+                        <p id="era-description" class="era-desc-text">Loading…</p>
+                        <div id="era-key-facts" class="key-facts-row" aria-label="Key facts"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="decision-panel" class="glass-panel decision-panel hidden" aria-live="polite">
+                <div class="decision-inner">
+                    <div class="decision-header">
+                        <h3 id="decision-title" class="decision-title"></h3>
+                        <p id="decision-text" class="decision-body"></p>
+                    </div>
+                    <div class="decision-choices" id="decision-choices"></div>
+                </div>
+            </section>
+
+            <section id="stats-dashboard" class="glass-panel" aria-label="Era statistics">
+                <h3 class="section-heading">
+                    <span class="section-heading-icon">📊</span>
+                    Era Statistics
+                </h3>
+                <div class="stats-grid">
+                    <div class="stat-card" role="region" aria-label="Temperature statistic">
+                        <div class="stat-header">
+                            <span class="stat-icon" aria-hidden="true">🌡️</span>
+                            <span class="stat-label">Temperature</span>
+                            <span id="temp-val" class="stat-value">—</span>
+                        </div>
+                        <div class="progress-track" role="presentation">
+                            <div id="temp-bar" class="progress-fill temp-fill" role="progressbar" aria-valuenow="0"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="stat-card" role="region" aria-label="Population statistic">
+                        <div class="stat-header">
+                            <span class="stat-icon" aria-hidden="true">👥</span>
+                            <span class="stat-label">Population</span>
+                            <span id="pop-val" class="stat-value">—</span>
+                        </div>
+                        <div class="circular-wrap" aria-hidden="true">
+                            <svg class="circular-svg" viewBox="0 0 80 80" aria-hidden="true">
+                                <circle class="circ-track" cx="40" cy="40" r="32" />
+                                <circle id="pop-circle" class="circ-fill pop-fill" cx="40" cy="40" r="32" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="stat-card" role="region" aria-label="Technology statistic">
+                        <div class="stat-header">
+                            <span class="stat-icon" aria-hidden="true">⚙️</span>
+                            <span class="stat-label">Technology</span>
+                            <span id="tech-val" class="stat-value">—</span>
+                        </div>
+                        <div class="progress-track" role="presentation">
+                            <div id="tech-bar" class="progress-fill tech-fill" role="progressbar" aria-valuenow="0"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="milestones-section" class="glass-panel" aria-label="Era milestones">
+                <h3 class="section-heading">
+                    <span class="section-heading-icon">🏆</span>
+                    Quantum Milestones
+                </h3>
+                <div id="milestones-grid" class="milestones-grid" role="list"></div>
+            </section>
+
+            <div class="advanced-row">
+
+                <section id="compare-section" class="glass-panel" aria-label="Compare two eras">
+                    <h3 class="section-heading">
+                        <span class="section-heading-icon">⚖️</span>
+                        Compare Eras
+                    </h3>
+                    <div class="compare-selectors">
+                        <div class="select-wrap">
+                            <select id="compare-era-1" aria-label="Select first era to compare">
+
+                            </select>
+                        </div>
+                        <span class="vs-badge">VS</span>
+                        <div class="select-wrap">
+                            <select id="compare-era-2" aria-label="Select second era to compare">
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="compare-grid" id="compare-grid">
+                        <div class="compare-card" id="compare-1-content" aria-live="polite"></div>
+                        <div class="compare-card" id="compare-2-content" aria-live="polite"></div>
+                    </div>
+                </section>
+
+                <section id="simulator-section" class="glass-panel" aria-label="Future simulator">
+                    <h3 class="section-heading">
+                        <span class="section-heading-icon">🔮</span>
+                        What-If Future Simulator
+                    </h3>
+                    <p class="sim-desc">Adjust today's choices to reshape Earth's future scenario.</p>
+                    <div class="slider-group">
+                        <div class="slider-label-row">
+                            <label for="pollution-slider">💨 Pollution Levels</label>
+                            <span id="pollution-val-display" class="slider-val">50%</span>
+                        </div>
+                        <input type="range" id="pollution-slider" min="0" max="100" value="50"
+                            aria-label="Pollution level slider">
+                    </div>
+                    <div class="slider-group">
+                        <div class="slider-label-row">
+                            <label for="tech-slider">⚡ Tech Advancement</label>
+                            <span id="tech-val-display" class="slider-val">50%</span>
+                        </div>
+                        <input type="range" id="tech-slider" min="0" max="100" value="50"
+                            aria-label="Technology advancement slider">
+                    </div>
+                    <button id="apply-sim-btn" class="cta-button ripple" aria-label="Simulate future outcome">
+                        <span>Simulate</span> 🔮
+                    </button>
+                    <div id="sim-result" class="sim-result-card hidden" aria-live="polite">
+                        <div class="sim-result-inner">
+                            <h4 id="sim-future-title"></h4>
+                            <p id="sim-future-desc"></p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section id="trend-section" class="glass-panel" aria-label="Statistics evolution chart">
+                <h3 class="section-heading">
+                    <span class="section-heading-icon">📈</span>
+                    Stats Evolution Over Time
+                </h3>
+                <div class="chart-legend" aria-hidden="true">
+                    <span class="legend-dot temp-fill"></span><span>Temperature</span>
+                    <span class="legend-dot pop-fill"></span><span>Population</span>
+                    <span class="legend-dot tech-fill"></span><span>Technology</span>
+                </div>
+                <div id="trend-chart-container" class="chart-container" role="img"
+                    aria-label="Bar chart showing stats across all eras"></div>
+            </section>
+
+            <div class="era-nav-arrows" aria-label="Navigate between eras">
+                <button id="prev-era-btn" class="nav-arrow-btn" aria-label="Previous era" disabled>‹ Prev</button>
+                <span id="era-counter" class="era-counter">1 / 5</span>
+                <button id="next-era-btn" class="nav-arrow-btn" aria-label="Next era">Next ›</button>
+            </div>
+
+    </main>
+
+    <div id="achievement-container" class="achievement-container" aria-live="polite"
+        aria-label="Achievement notifications"></div>
+
+    <div id="impact-toast" class="impact-toast hidden" aria-live="assertive"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
